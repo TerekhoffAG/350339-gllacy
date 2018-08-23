@@ -92,13 +92,13 @@
         <h2 class="visually-hidden">Выгодное предложение</h2>
         <div class="banner">
           <h3>Малинка даром!</h3>
-          <p></p>
-          <a class="" href="#">Хочу варенье!</a>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a href="#">Хочу варенье!</a>
         </div>
         <div class="banner">
           <h3>Шоколадки даром!</h3>
-          <p></p>
-          <a class="" href="#">Хочу шоколадки!</a>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a href="#">Хочу шоколадки!</a>
         </div>
       </section>
       <section class="hits">
@@ -144,14 +144,16 @@
       <section class="subscription">
         <h2 class="">Подписка на новости магазина</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form>
-          <!--Здесь будет форма-->
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="entry-field-subscription">Ввод электронной почты</label>
+          <input id="entry-field-subscription" type="email" name="email" placeholder="Электронная почта">
+          <button type="submit">Отправить</button>
         </form>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Адрес и телефон магазина</h2>
         <div class="shop-adds">
-          <img src="img/map.png" width="1200" height="640" alt="карта местности">
+          <img src="img/map.png" width="1200" height="640" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
           <img src="img/pin.svg" width="80" height="140" alt="место расположения магазина">
           <p>
             Адрес главного офиса и офлайн-магазина:<br>
@@ -206,15 +208,24 @@
     
     <section class="modal modal-search">
       <h2 class="visually-hidden">Поиск по сайту</h2>
-      <form>
-        <!--Здесь будет форма-->
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="entry-field-search">Поиск по сайту</label>
+        <input id="entry-field-search" type="search" name="search" placeholder="Что ищем?">
       </form>
     </section>
     
     <section class="modal modal-login">
-      <h2 class="visually-hidden">Личный кабинет</h2>
-      <form>
-        <!--Здесь будет форма-->
+      <h2 class="visually-hidden">Вход в личный кабинет</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="entry-field-login">Ввод электронной почты</label>
+          <input id="entry-field-login" type="email" name="login" placeholder="Электронная почта">
+        </p>
+        <p>
+          <label class="visually-hidden" for="entry-field-password">Ввод пароля</label>
+          <input id="entry-field-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <button type="submit">Войти</button>
         <a href="">Забыли пароль?</a>
         <a href="">Новая регистрация</a>
       </form>
@@ -223,10 +234,22 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p>Мы обязательно вам ответим!</p>
-      <form>
-        <!--Здесь будет форма-->
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="entry-field-name">Ввод имени</label>
+          <input id="entry-field-name" type="text" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="entry-field-email">Ввод почты для ответа</label>
+          <input id="entry-field-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="entry-field-text">Ввод текста обращения</label>
+          <textarea id="entry-field-text" name="text" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <button type="submit">Отправить</button>
       </form>
-      <span class="modal-close">x</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     
   </body>

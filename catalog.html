@@ -74,8 +74,61 @@
       
       <h1>Сливочное мороженое</h1>
       
-      <form>
-        <!--Здесь будет форма-->
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <label for="sorting">Сортировка:</label>
+        <select id="sorting" name="sorting">
+          <option>по популярности</option>
+          <option>сначала недорогие</option>
+          <option>сначала дорогие</option>
+          <option>по жирности</option>
+        </select>
+        <fieldset>
+          <legend>Жирность:</legend>
+          <ul>
+            <li>
+              <input id="fatness-zero" type="radio" name="fatness" value="0%">
+              <label for="fatness-zero">0%</label>              
+            </li>
+            <li>
+              <input id="fatness-less-10" type="radio" name="fatness" value="less 10%" checked>
+              <label for="fatness-less-10">до 10%</label>
+            </li>
+            <li>
+              <input id="fatness-less-30" type="radio" name="fatness" value="less 30%">
+              <label for="fatness-less-30">до 30%</label>
+            </li>
+            <li>
+              <input id="fatness-over-30" type="radio" name="fatness" value="over 30%">
+              <label  for="fatness-over-30">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <ul>
+            <li>
+              <input id="additive-chocolate" type="checkbox" name="chocolate" checked>
+              <label for="additive-chocolate">шоколадные</label>  
+            </li>
+            <li>
+              <input id="additive-sugar" type="checkbox" name="sugar" checked>
+              <label for="additive-sugar">сахарные присыпки</label>
+            </li>
+            <li>
+              <input id="additive-fruits" type="checkbox" name="fruits">
+              <label for="additive-fruits">фрукты</label>
+            </li>
+            <li>
+              <input id="additive-syrups" type="checkbox" name="syrups">
+              <label  for="additive-syrups">сиропы</label>
+            </li>
+            <li>
+              <input id="additive-jams" type="checkbox" name="jams">
+              <label  for="additive-jams">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Применить</button>
       </form>
       
       <section class="catalog-creamy">
@@ -156,7 +209,7 @@
         </ul>
         <ul class="page-list">
           <li>
-            <a href="#"><span>Назад</span></a></li>
+            <a href="#"><span class="visually-hidden">Назад</span></a></li>
           <li>
             <a href="#">1</a>
           </li>
@@ -173,7 +226,7 @@
             <a href="#">5</a>
           </li>
           <li>
-            <a href="#"><span>Вперёд</span></a>
+            <a href="#"><span class="visually-hidden">Вперёд</span></a>
           </li>
         </ul>
       </section>
@@ -221,14 +274,18 @@
       <h2 class="visually-hidden">Товары в корзине</h2>
       <table>
         <tr>
-          <td><span class="visually-hidden">Удалить из корзины</span></td>
+          <td>
+            <button class="delet-ice" type="button">Удалить из корзины</button>
+          </td>
           <td><img src="img/small-ice1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
           <td>Пломбир с апельсиновым джемом</td>
           <td>1,5 кг х 200 руб.</td>
           <td>300 руб.</td>
         </tr>
         <tr>
-          <td><span class="visually-hidden">Удалить из корзины</span></td>
+          <td>
+            <button class="delet-ice" type="button">Удалить из корзины</button>
+          </td>
           <td><img src="img/small-ice2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой"></td>
           <td>Клубничный пломбир с присыпкой из белого шоколада</td>
           <td>1,5 кг х 300 руб.</td>
