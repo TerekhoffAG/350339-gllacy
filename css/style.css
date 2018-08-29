@@ -1,0 +1,482 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+.btn {
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  background-image: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
+}
+
+.site-navigation,
+.sub-navigation,
+.user-panel {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #ffffff;
+  line-height: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #323232;
+  background-color: #f7f6f3;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.site-navigation .visit-page {
+  background-color: #d07058;
+  border-bottom: none;
+}
+
+.sub-navigation {
+  background-color: #f8f7f4;
+}
+
+.sub-navigation a {
+  text-decoration: none;
+  color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.sub-navigation .novelty {
+  font-weight: 700;
+}
+
+.sub-navigation a:hover,
+.sub-navigation a:focus {
+  background-color: #fbded7;
+}
+
+.sub-navigation a:active {
+  background-color: #f6b5a5;
+}
+
+.sub-navigation .visit-page {
+  background-color: #d07058;
+}
+
+.user-panel a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-panel a:hover,
+.user-panel a:focus {
+  color: #323232;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.shop-contacts p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.shop-contacts span {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.slider-list p {
+  font-size: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.slider-list .btn {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.banner:first-of-type {
+  background-image: url("../img/raspberries.jpg");
+  background-color: #cb2643;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.banner:last-of-type {
+  background-image: url("../img/chocolate.jpg");
+  background-color: #653b22;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.banner h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.banner p {
+  font-size: 18px;
+}
+
+.creamy-list {
+  list-style: none;
+}
+
+.creamy-list p {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.creamy-list span {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.link-product {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.link-product:hover,
+.link-product:focus,
+.link-product:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.advantage {
+  background-image: url("../img/wafer.jpg");
+  background-color: #f0e7d1;
+  background-position: 0 0;
+  color: #323232;
+}
+
+.advantage h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.advantage p {
+  font-weight: 400;
+}
+
+.news-blog {
+  background-image: url(../img/strawberry-ice.jpg);
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news-blog h2 {
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.news-blog a {
+  text-decoration: none;
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+.news-blog a:hover,
+.news-blog a:focus,
+.news-blog a:active {
+  color: #e84d37;
+  border-bottom: 2px solid rgba(232, 77, 55, 0.3);
+}
+
+.subscription {
+  background-color: #f8f7f4;
+}
+
+.subscription p {
+  color: #5a5a5a;
+  font-weight: 400;
+}
+
+.shop-adds {
+  background-color: #ffffff;
+}
+
+.shop-adds p {
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.shop-adds span {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.social-links {
+  list-style: none;
+}
+
+.additional-navigation ul {
+  list-style: none;
+}
+
+.additional-navigation a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.additional-navigation .for-suppliers {
+  font-weight: 700;
+}
+
+.additional-navigation a:hover,
+.additional-navigation a:focus,
+.additional-navigation a:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.footer-copyright p {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer-copyright a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus,
+.footer-copyright a:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.footer-copyright .link-logo-academy,
+.footer-copyright .link-logo-academy:hover,
+.footer-copyright .link-logo-academy:focus,
+.footer-copyright .link-logo-academy:active {
+  border-bottom: none;
+}
+
+.modal {
+  background-color: #f8f7f4;
+  font-weight: 700;
+}
+
+.modal-feedback h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.login-form input,
+.search-form input {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.login-form a {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+}
+
+.login-form a:hover,
+.login-form a:focus,
+.login-form a:active {
+  color: #e84d37;
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
+}
+
+
+.feedback-form input,
+.feedback-form textarea {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/*страница каталога*/
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-list a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.breadcrumbs-list a:hover,
+.breadcrumbs-list a:focus,
+.breadcrumbs-list a:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.breadcrumbs-list .visit-page,
+.breadcrumbs-list .visit-page:hover,
+.breadcrumbs-list .visit-page:focus,
+.breadcrumbs-list .visit-page:active {
+  border-bottom: none;
+  color: #ffffff;
+}
+
+.filter label {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filter select {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.filter select:hover {
+  color: #323232;
+}
+
+.filter select:focus {
+  color: #323232;
+  background: rgba(255, 255, 255, 1);
+}
+
+.filter option {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.filter fieldset {
+  border: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.fatness label,
+.additive label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filter button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+}
+
+.filter button:hover,
+.filter button:focus {
+  color: #323232;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.filter button:active {
+  background-color: rgba(237, 237, 237, 1);
+}
+
+.page-list {
+  list-style: none;
+}
+
+.page-list a {
+  width: 27px;
+  height: 26px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 18px;
+  font-weight: 500;
+  display:block;
+  border-radius: 50%;
+}
+
+.page-list a:hover:not(.back):not(.next),
+.page-list a:focus:not(.back):not(.next) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.page-list a:active:not(.back):not(.next),
+.page-list .visit-page {
+  color: #323232;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+.modal-cart table {
+  border-collapse: collapse;
+}
+
+.modal-cart .selected-product {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.selected-product span {
+  color: #999999;
+}
+
+.modal-cart .total-sum {
+  font-size: 15px;
+  line-height: 18px;
+  color: #323232;
+  text-align: right;
+  border-top: 1px solid #cacac7;
+}
