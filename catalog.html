@@ -9,7 +9,7 @@
   </head>
   <body>
     
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-nav">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
@@ -53,12 +53,12 @@
             <a class="user-cart" href="#">2 товара</a>
           </li>
         </ul>
-        <div class="shop-contacts">
-          <p>
-            С 10 до 20, ежедневно<br>
-            <span>8 812 450-25-25</span>
-          </p>        
-        </div>
+      </nav>
+      <div class="crumbs-wrapper">
+        <p class="shop-contacts">
+          С 10 до 20, ежедневно<br>
+          <span>8 812 450-25-25</span>
+        </p>
         <ul class="breadcrumbs-list">
           <li>
             <a href="index.html">Главная</a>
@@ -70,68 +70,73 @@
             <a class="visit-page">Сливочное</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
     
-    <main class="main-content">
+    <main class="catalog-content container">
       
       <h1>Сливочное мороженое</h1>
       
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-        <label for="sorting">Сортировка:</label>
-        <select id="sorting" name="sorting">
-          <option>по популярности</option>
-          <option>сначала недорогие</option>
-          <option>сначала дорогие</option>
-          <option>по жирности</option>
-        </select>
-        <fieldset class="fatness">
-          <legend>Жирность:</legend>
-          <ul>
-            <li>
-              <input id="fatness-zero" type="radio" name="fatness" value="0%">
-              <label for="fatness-zero">0%</label>              
-            </li>
-            <li>
-              <input id="fatness-less-10" type="radio" name="fatness" value="less 10%" checked>
-              <label for="fatness-less-10">до 10%</label>
-            </li>
-            <li>
-              <input id="fatness-less-30" type="radio" name="fatness" value="less 30%">
-              <label for="fatness-less-30">до 30%</label>
-            </li>
-            <li>
-              <input id="fatness-over-30" type="radio" name="fatness" value="over 30%">
-              <label  for="fatness-over-30">выше 30%</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="additive">
-          <legend>Наполнители:</legend>
-          <ul>
-            <li>
-              <input id="additive-chocolate" type="checkbox" name="chocolate" checked>
-              <label for="additive-chocolate">шоколадные</label>  
-            </li>
-            <li>
-              <input id="additive-sugar" type="checkbox" name="sugar" checked>
-              <label for="additive-sugar">сахарные присыпки</label>
-            </li>
-            <li>
-              <input id="additive-fruits" type="checkbox" name="fruits">
-              <label for="additive-fruits">фрукты</label>
-            </li>
-            <li>
-              <input id="additive-syrups" type="checkbox" name="syrups">
-              <label  for="additive-syrups">сиропы</label>
-            </li>
-            <li>
-              <input id="additive-jams" type="checkbox" name="jams">
-              <label  for="additive-jams">джемы</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">Применить</button>
+        <div class="filter-wrapper">
+          <label for="sorting">Сортировка:</label>
+          <select id="sorting" name="sorting">
+            <option>по популярности</option>
+            <option>сначала недорогие</option>
+            <option>сначала дорогие</option>
+            <option>по жирности</option>
+          </select>
+          <div class="price">Цена: 100 руб. – 500 руб.</div>
+          <fieldset class="fatness">
+            <legend>Жирность:</legend>
+            <ul>
+              <li>
+                <input id="fatness-zero" type="radio" name="fatness" value="0%">
+                <label for="fatness-zero">0%</label>              
+              </li>
+              <li>
+                <input id="fatness-less-10" type="radio" name="fatness" value="less 10%" checked>
+                <label for="fatness-less-10">до 10%</label>
+              </li>
+              <li>
+                <input id="fatness-less-30" type="radio" name="fatness" value="less 30%">
+                <label for="fatness-less-30">до 30%</label>
+              </li>
+              <li>
+                <input id="fatness-over-30" type="radio" name="fatness" value="over 30%">
+                <label  for="fatness-over-30">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="filter-wrapper">
+          <fieldset class="additive">
+            <legend>Наполнители:</legend>
+            <ul>
+              <li>
+                <input id="additive-chocolate" type="checkbox" name="chocolate" checked>
+                <label for="additive-chocolate">шоколадные</label> 
+              </li>
+              <li>
+                <input id="additive-sugar" type="checkbox" name="sugar" checked>
+                <label for="additive-sugar">сахарные присыпки</label>
+              </li>
+              <li>
+                <input id="additive-fruits" type="checkbox" name="fruits">
+                <label for="additive-fruits">фрукты</label>
+              </li>
+              <li>
+                <input id="additive-syrups" type="checkbox" name="syrups">
+                <label  for="additive-syrups">сиропы</label>
+              </li>
+              <li>
+                <input id="additive-jams" type="checkbox" name="jams">
+                <label  for="additive-jams">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Применить</button>
+        </div>
       </form>
       
       <section class="catalog-creamy">
@@ -236,7 +241,7 @@
       
     </main>
     
-    <footer>
+    <footer class="main-footer container">
       <ul class="social-links">
         <li>
           <a href="#"><span class="visually-hidden">Твитер</span></a>
@@ -278,7 +283,7 @@
       <table>
         <tr class="selected-product">
           <td>
-            <button class="delet-ice" type="button">Удалить из корзины</button>
+            <button class="delet-ice" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
           </td>
           <td><img src="img/small-ice1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
           <td>Пломбир с апельсиновым джемом</td>
@@ -287,7 +292,7 @@
         </tr>
         <tr class="selected-product">
           <td>
-            <button class="delet-ice" type="button">Удалить из корзины</button>
+            <button class="delet-ice" type="button"><span class="visually-hidden">Удалить из корзины</span></button>
           </td>
           <td><img src="img/small-ice2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой"></td>
           <td>Клубничный пломбир с присыпкой из белого шоколада</td>
