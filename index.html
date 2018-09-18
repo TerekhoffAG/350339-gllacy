@@ -9,15 +9,21 @@
   </head>
   <body>
     
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    
+    <div class="site-wrapper">
+      
     <header class="main-header container">
       <nav class="main-nav">
         <a class="main-header-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
         </a>
         <ul class="site-navigation ">
-          <li>
-            <a href="#">Каталог</a>
-            <ul class="sub-navigation visually-hidden">
+          <li class="site-catalog">
+            <a class="site-link" href="#">Каталог</a>
+            <ul class="sub-navigation">
               <li>
                 <a class="novelty" href="#">Новинки</a>
               </li>
@@ -36,20 +42,47 @@
             </ul>
           </li>
           <li>
-            <a href="#">Доставка и оплата</a>
+            <a class="site-link" href="#">Доставка и оплата</a>
           </li>
           <li>
-            <a href="#">О Компании</a>
+            <a class="site-link" href="#">О Компании</a>
           </li>
         </ul>
         <ul class="user-panel">
-          <li>
+          <li class="search-item">
             <a class="user-search" href="#"><span class="visually-hidden">Поиск</span></a>
+            <section class="modal modal-search">
+              <h2 class="visually-hidden">Поиск по сайту</h2>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="entry-field-search">Поиск по сайту</label>
+                <input id="entry-field-search" type="search" name="search" placeholder="Что ищем?">
+              </form>
+            </section>
           </li>
-          <li>
+          <li class="login-item">
             <a class="user-login" href="#">Вход</a>
+            <section class="modal modal-login">
+              <h2 class="visually-hidden">Вход в личный кабинет</h2>
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visually-hidden" for="entry-field-login">Ввод электронной почты</label>
+                  <input id="entry-field-login" type="email" name="login" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="entry-field-password">Ввод пароля</label>
+                  <input id="entry-field-password" type="password" name="password" placeholder="Пароль">
+                </p>
+                <div class="login-wrapper">
+                  <button class="btn" type="submit">Войти</button>
+                  <p>
+                    <a href="">Забыли пароль?</a>
+                    <a href="">Новая регистрация</a>
+                  </p>
+                </div>
+              </form>
+            </section>
           </li>
-          <li>
+          <li class="cart-item">
             <a class="user-cart" href="#">Пусто</a>
           </li>
         </ul>
@@ -68,28 +101,26 @@
         <section class="slider">
           <h2 class="visually-hidden">Самое вкусное мороженое</h2>
           <ul class="slider-list">
-            <li>
-              <!--<img src="img/ice-cream1.png" width="1045" height="881" alt="Крем-брюле и пломбир">-->
+            <li class="slide" id="slide1">
               <p>Крем-брюле и пломбир с малиновым джемом</p>
               <a class="btn" href="#">Давайте оба!</a>
             </li>
-            <li class="visually-hidden">
-              <!--<img src="img/ice-cream2.png" width="1065" height="859" alt="Пломбир и сорбет">-->
+            <li class="slide" id="slide2">
               <p>Шоколадный пломбир и лимонный сорбет</p>
               <a class="btn" href="#">Давайте оба!</a>
             </li>
-            <li class="visually-hidden">
-              <!--<img src="img/ice-cream3.png" width="1079" height="854" alt="Пломбир и щербет">-->
+            <li class="slide" id="slide3">
               <p>Пломбир с помадкой и клубничный щербет</p>
               <a class="btn" href="#">Давайте оба!</a>
             </li>
           </ul>
-          <div class="slider-toggles">
-            <button class="toggle-button active" type="button"><span class="visually-hidden">Первый слайд</span></button>
-            <button class="toggle-button" type="button"><span class="visually-hidden">Второй слайд</span></button>
-            <button class="toggle-button" type="button"><span class="visually-hidden">Третий слайд</span></button>
+          <div class="slider-controls">
+            <label for="product-1">Первый слайд</label>
+            <label for="product-2">Второй слайд</label>
+            <label for="product-3">Третий слайд</label>
           </div>
         </section>
+        
         <section class="banners">
           <h2 class="visually-hidden">Выгодное предложение</h2>
           <div class="banner">
@@ -103,6 +134,7 @@
             <a class="btn" href="#">Хочу шоколадки!</a>
           </div>
         </section>
+        
         <section class="hits">
           <h2 class="visually-hidden">Хиты продаж мороженого</h2>
           <ul class="hits-list creamy-list">
@@ -140,6 +172,7 @@
             </li>
           </ul>
         </section>
+        
         <section class="advantage">
           <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
           <div class="advantage-wrapper">
@@ -149,11 +182,13 @@
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </div>
         </section>
+        
         <div class="content-wrapper">
           <article class="news-blog">
             <h2>Новое в нашем блоге</h2>
             <a href="#">10 способов сервировки фруктовых щербетов к столу</a>       
           </article>
+          
           <section class="subscription">
             <div class="subscription-wrapper">
               <h2 class="visually-hidden">Подписка на новости магазина</h2>
@@ -166,7 +201,9 @@
             </div>
           </section>
         </div>
+        
       </div>
+      
       <section class="map">
         <h2 class="visually-hidden">Адрес и телефон магазина</h2>
         <img src="img/map-background.png" width="1200" height="430" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -183,6 +220,7 @@
           <a class="btn" href="#">Форма обратной связи</a>
         </div>
       </section>
+      
     </main>
     
     <footer class="main-footer container">
@@ -224,31 +262,6 @@
       </div>
     </footer>
     
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Поиск по сайту</h2>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="entry-field-search">Поиск по сайту</label>
-        <input id="entry-field-search" type="search" name="search" placeholder="Что ищем?">
-      </form>
-    </section>
-    
-    <section class="modal modal-login">
-      <h2 class="visually-hidden">Вход в личный кабинет</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="entry-field-login">Ввод электронной почты</label>
-          <input id="entry-field-login" type="email" name="login" placeholder="Электронная почта">
-        </p>
-        <p>
-          <label class="visually-hidden" for="entry-field-password">Ввод пароля</label>
-          <input id="entry-field-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <button class="btn" type="submit">Войти</button>
-        <a href="">Забыли пароль?</a>
-        <a href="">Новая регистрация</a>
-      </form>
-    </section>
-    
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <h3>Мы обязательно вам ответим!</h3>
@@ -269,6 +282,9 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+    <div class="modal-overly"></div>
+      
+    </div>
     
   </body>
 </html>
