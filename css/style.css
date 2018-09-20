@@ -29,7 +29,6 @@ input[type="radio"].visually-hidden {
 .btn {
   text-decoration: none;
   text-align: center;
-  /*vertical-align: middle;*/
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -741,8 +740,7 @@ input[type="radio"].visually-hidden {
 
 .social-links a {
   background: url("../img/twitter.svg");
-  background-position: center center;
-  /*background-position: 0.5px; /*only for IE11+ scale viewport 100% 1280x1024*/
+  background-position: center center;  
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
@@ -1519,13 +1517,12 @@ li:last-child .additive-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .creamy-list .creamy-item {
   width: 293px;
   padding-top: 6px;
