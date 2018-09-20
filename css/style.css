@@ -67,6 +67,7 @@ input[type="radio"].visually-hidden {
 .container {
   width: 1200px;
   margin: 0 auto;
+  display: block;
 }
 
 /*главная страница*/
@@ -298,8 +299,8 @@ input[type="radio"].visually-hidden {
 
 .user-panel .user-login:hover,
 .user-panel .user-login:focus,
-.user-panel .user-cart:hover,
-.user-panel .user-cart:focus {
+.user-panel .user-cart:hover:not(.empty-cart),
+.user-panel .user-cart:focus:not(.empty-cart) {
   color: #323232;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -315,8 +316,8 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/entrance-active.svg);
 }
 
-.user-panel .user-cart:hover::before,
-.user-panel .user-cart:focus::before {
+.user-panel .user-cart:not(.empty-cart):hover::before,
+.user-panel .user-cart:not(.empty-cart):focus::before {
   background-image: url(../img/basket-red.svg);
 }
 
@@ -334,6 +335,11 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   margin-top: 4px;
   margin-right: -1px;
+  display: block;
+}
+
+.main-content,
+.catalog-content {
   display: block;
 }
 
@@ -619,7 +625,9 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
   padding: 5px;
   background-image: url(../img/bg-post.svg);
-  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .subscription .subscription-wrapper {
@@ -732,8 +740,9 @@ input[type="radio"].visually-hidden {
 }
 
 .social-links a {
-  background-image: url("../img/twitter.svg");
-  background-position: center;
+  background: url("../img/twitter.svg");
+  background-position: center center;
+  /*background-position: 0.5px; /*only for IE11+ scale viewport 100% 1280x1024*/
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
@@ -1106,32 +1115,49 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+@-webkit-keyframes scale-modal {
+  0% { -webkit-transform: scale(0.1); transform: scale(0.1); }
+  20% { -webkit-transform: scale(0.2); transform: scale(0.2); }
+  40% { -webkit-transform: scale(0.4); transform: scale(0.4); }
+  60% { -webkit-transform: scale(0.6); transform: scale(0.6); }
+  80% { -webkit-transform: scale(0.8); transform: scale(0.8); }
+  90% { -webkit-transform: scale(0.9); transform: scale(0.9); }
+  100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+
 @keyframes scale-modal {
-  0% { transform: scale(0.1); }
-  20% { transform: scale(0.2); }
-  40% { transform: scale(0.4); }
-  60% { transform: scale(0.6); }
-  80% { transform: scale(0.8); }
-  90% { transform: scale(0.9); }
-  100% { transform: scale(1); }
+  0% { -webkit-transform: scale(0.1); transform: scale(0.1); }
+  20% { -webkit-transform: scale(0.2); transform: scale(0.2); }
+  40% { -webkit-transform: scale(0.4); transform: scale(0.4); }
+  60% { -webkit-transform: scale(0.6); transform: scale(0.6); }
+  80% { -webkit-transform: scale(0.8); transform: scale(0.8); }
+  90% { -webkit-transform: scale(0.9); transform: scale(0.9); }
+  100% { -webkit-transform: scale(1); transform: scale(1); }
 }
 
 .modal-show {
   display: block;
-  animation: scale-modal 0.5s;
+  -webkit-animation: scale-modal 0.5s;
+          animation: scale-modal 0.5s;
 }
 
 .modal-overlay-show {
   display: block;
 }
 
+@-webkit-keyframes shake {
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: skewX(-2deg) skewY(-1deg); transform: skewX(-2deg) skewY(-1deg) }
+  20%, 40%, 60%, 80% { -webkit-transform: skewX(2deg) skewY(1deg); transform: skewX(2deg) skewY(1deg) }
+ }
+
 @keyframes shake {
-  10%, 30%, 50%, 70%, 90% { transform: skewX(-2deg) skewY(-1deg) }
-  20%, 40%, 60%, 80% { transform: skewX(2deg) skewY(1deg) }
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: skewX(-2deg) skewY(-1deg); transform: skewX(-2deg) skewY(-1deg) }
+  20%, 40%, 60%, 80% { -webkit-transform: skewX(2deg) skewY(1deg); transform: skewX(2deg) skewY(1deg) }
  } 
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 /*страница каталога*/
@@ -1229,6 +1255,7 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
   padding: 9px 33px 9px 15px;
+  min-width: 193px;
   border-radius: 100px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1575,7 +1602,7 @@ li:last-child .additive-checkbox {
   padding: 9px 16px 12px 16px;
   border-radius: 100px;
   position: absolute;
-  top: 339px;
+  bottom: -22px;
   left: 46px;
   z-index: 2;
 }
@@ -1733,6 +1760,7 @@ li:last-child .additive-checkbox {
   height: 33px;
   padding-left: 10px;
   padding-right: 11px;
+  border-radius: 50%;
 }
 
 .selected-product .product-name {
