@@ -298,10 +298,10 @@ input[type="radio"].visually-hidden {
 
 .user-panel .user-login:hover,
 .user-panel .user-login:focus,
-.user-panel .user-cart:hover:not(.empty-cart),
-.user-panel .user-cart:focus:not(.empty-cart) {
+.user-panel .user-cart:not(.empty-cart),
+.user-panel .user-cart:not(.empty-cart) {
   color: #323232;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
 }
 
 .user-panel .user-search:hover::before,
@@ -315,8 +315,8 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/entrance-active.svg);
 }
 
-.user-panel .user-cart:not(.empty-cart):hover::before,
-.user-panel .user-cart:not(.empty-cart):focus::before {
+.user-panel .user-cart:not(.empty-cart)::before,
+.user-panel .user-cart:not(.empty-cart)::before {
   background-image: url(../img/basket-red.svg);
 }
 
