@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -55,8 +55,8 @@
             <section class="modal modal-search">
               <h2 class="visually-hidden">Поиск по сайту</h2>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="entry-field-search">Поиск по сайту</label>
                 <input id="entry-field-search" type="search" name="search" placeholder="Что ищем?">
+                <label class="visually-hidden" for="entry-field-search">Поиск по сайту</label>
               </form>
             </section>
           </li>
@@ -66,12 +66,12 @@
               <h2 class="visually-hidden">Вход в личный кабинет</h2>
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                  <label class="visually-hidden" for="entry-field-login">Ввод электронной почты</label>
                   <input id="entry-field-login" type="email" name="login" placeholder="Электронная почта">
+                  <label class="visually-hidden" for="entry-field-login">Ввод электронной почты</label>
                 </p>
                 <p>
-                  <label class="visually-hidden" for="entry-field-password">Ввод пароля</label>
                   <input id="entry-field-password" type="password" name="password" placeholder="Пароль">
+                  <label class="visually-hidden" for="entry-field-password">Ввод пароля</label>
                 </p>
                 <div class="login-wrapper">
                   <button class="btn" type="submit">Войти</button>
@@ -89,8 +89,7 @@
         </ul>
       </nav>
       <p class="shop-contacts">
-        С 10 до 20, ежедневно<br>
-        <span>8 812 450-25-25</span>
+        С 10 до 20, ежедневно<span>8 812 450-25-25</span>
       </p>
     </header>
     
@@ -195,8 +194,8 @@
               <h2 class="visually-hidden">Подписка на новости магазина</h2>
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="entry-field-subscription">Ввод электронной почты</label>
                 <input id="entry-field-subscription" type="email" name="email" placeholder="Электронная почта">
+                <label class="visually-hidden" for="entry-field-subscription">Ввод электронной почты</label>
                 <button class="btn" type="submit">Отправить</button>
               </form>
             </div>
@@ -207,7 +206,7 @@
       
       <section class="map">
         <h2 class="visually-hidden">Адрес и телефон магазина</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1537336088146" width="1200" height="430" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1537336088146" width="1200" height="429" style="border:0" allowfullscreen></iframe>
         <div class="shop-adds">
           <p>Адрес главного офиса и офлайн-магазина:</p>
           <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span> 
@@ -268,16 +267,16 @@
       <h3>Мы обязательно вам ответим!</h3>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label class="visually-hidden" for="entry-field-name">Ввод имени</label>
           <input id="entry-field-name" type="text" name="name" placeholder="Как вас зовут?">
+          <label class="visually-hidden" for="entry-field-name">Ввод имени</label>
         </p>
         <p>
-          <label class="visually-hidden" for="entry-field-email">Ввод почты для ответа</label>
           <input id="entry-field-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+          <label class="visually-hidden" for="entry-field-email">Ввод почты для ответа</label>
         </p>
         <p>
-          <label class="visually-hidden" for="entry-field-text">Ввод текста обращения</label>
           <textarea id="entry-field-text" name="text" placeholder="Напишите что-нибудь..."></textarea>
+          <label class="visually-hidden" for="entry-field-text">Ввод текста обращения</label>
         </p>
         <button class="btn" type="submit">Отправить</button>
       </form>

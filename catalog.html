@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -17,7 +17,7 @@
         </a>
         <ul class="site-navigation">
           <li class="site-catalog">
-            <a class="site-link visit-page" href="#">Католог</a>
+            <a class="site-link visit-page" href="#">Каталог</a>
             <ul class="sub-navigation">
               <li>
                 <a class="novelty" href="#">Новинки</a>
@@ -49,8 +49,8 @@
             <section class="modal modal-search">
               <h2 class="visually-hidden">Поиск по сайту</h2>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="entry-field-search">Поиск по сайту</label>
                 <input id="entry-field-search" type="search" name="search" placeholder="Что ищем?">
+                <label class="visually-hidden" for="entry-field-search">Поиск по сайту</label>
               </form>
             </section>
           </li>
@@ -60,12 +60,12 @@
               <h2 class="visually-hidden">Вход в личный кабинет</h2>
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                  <label class="visually-hidden" for="entry-field-login">Ввод электронной почты</label>
                   <input id="entry-field-login" type="email" name="login" placeholder="Электронная почта">
+                  <label class="visually-hidden" for="entry-field-login">Ввод электронной почты</label>
                 </p>
                 <p>
-                  <label class="visually-hidden" for="entry-field-password">Ввод пароля</label>
                   <input id="entry-field-password" type="password" name="password" placeholder="Пароль">
+                  <label class="visually-hidden" for="entry-field-password">Ввод пароля</label>
                 </p>
                 <div class="login-wrapper">
                   <button class="btn" type="submit">Войти</button>
@@ -113,8 +113,7 @@
       </nav>
       <div class="crumbs-wrapper">
         <p class="shop-contacts">
-          С 10 до 20, ежедневно<br>
-          <span>8 812 450-25-25</span>
+          С 10 до 20, ежедневно<span>8 812 450-25-25</span>
         </p>
         <ul class="breadcrumbs-list">
           <li>
@@ -140,13 +139,13 @@
         <div class="filter-wrapper">
           <fieldset class="sorting">
             <legend>Сортировка:</legend>
-            <label class="visually-hidden" for="sorting-product">Сортировка продукции</label>
             <select id="sorting-product" name="sorting">
               <option>по популярности</option>
               <option>сначала недорогие</option>
               <option>сначала дорогие</option>
               <option>по жирности</option>
             </select>
+            <label class="visually-hidden" for="sorting-product">Сортировка продукции</label>
           </fieldset>
           <div class="price">
             <div class="price-controls">
